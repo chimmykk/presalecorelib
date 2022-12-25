@@ -4,11 +4,11 @@
   
 
 <head>
-    <title>AdaStarter</title>
+    <title>AirBnbDefi</title>
     <meta data-n-head="ssr" charset="utf-8">
     <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
-    <meta data-n-head="ssr" data-hid="description" name="description" content="AdaStarter">
-    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="AdaStarter">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="AirBnbDefir">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="AirBnbDefi">
 
     <link rel="preload" href="_nuxt/e6b99c4.js" as="script">
     <link rel="preload" href="_nuxt/9e20f49.js" as="script">
@@ -51,7 +51,7 @@
                         <div class="col-span-2" data-v-46a24d98>
                           <div class="label-v" data-v-46a24d98>
                             <div class="label" data-v-46a24d98>
-                              <i data-v-46a24d98>Total ADAS</i></div>
+                              <i data-v-46a24d98>Total ABD</i></div>
                             <div class="flex items-center" data-v-46a24d98>
                               <div class="w-5 h-5 bg-red-500 text-white text-sm text-center rounded-full mr-1" data-v-46a24d98>$</div>
                               <div class="value" data-v-46a24d98>1,000,000</div></div>
@@ -65,17 +65,17 @@
                         <div class="col-span-2" data-v-46a24d98>
                           <div class="label-v" data-v-46a24d98>
                             <div class="label" data-v-46a24d98>Total BNB Raised</div>
-                            <div class="value" data-v-46a24d98><span class="totalbnbraised">800</span></div></div>
+                            <div class="value" data-v-46a24d98><span class="totalbnbraised">25</span></div></div>
                         </div>
                         <div class="col-span-3" data-v-46a24d98>
                           <div class="label-v" data-v-46a24d98>
                             <div class="label" data-v-46a24d98>Private Sale Price</div>
-                            <div class="value" data-v-46a24d98>1 BNB = <span class="saleprice">200,000</span> ADAS</div></div>
+                            <div class="value" data-v-46a24d98>1 BNB = <span class="saleprice">200,000</span> ABD</div></div>
                         </div>
                         <div class="col-start-5 col-span-2" data-v-46a24d98>
                           <div class="label-v" data-v-46a24d98>
                             <div class="label" data-v-46a24d98>Start Time</div>
-                            <div class="value" data-v-46a24d98><span class="starttime">September 5th 19:00 UTC</span></div></div>
+                            <div class="value" data-v-46a24d98><span class="starttime">December 27th 19:00 UTC</span></div></div>
                         </div>
                       </div>
                     </div>
@@ -92,11 +92,11 @@
                           
                          
                           <p class="mt-4" data-v-46a24d98>PreSale Price: 1 BNB =  125,000 ADAS<br>
-                            Total Token For Private Sale: 350,000,000 ADAS <br>
+                            Total Token For Private Sale: 350,000,000 ADB <br>
                             Minimum Contribution: 0.5 BNB <br>
-                            Total BNB Raised: 2800 BNB<br>
-                            Start Date: September 5, 12:00PM UTC<br>
-                            End Date: September 5, 1:00PM UTC<br>
+                            Total BNB Raised: 25 BNB<br>
+                            Start Date: December 27, 12:00PM UTC<br>
+                            End Date: December 31st, 1:00PM UTC<br>
                             Release: 50% TGE, 50% In 2 Months<br>
                             
                             
@@ -328,8 +328,8 @@
             
             var alreadyIDO = parseFloat(web3js.utils.fromWei(res, 'ether'));
 
-            if(setp == 2 && alreadyIDO > 1250) {
-              alreadyIDO = alreadyIDO - 1250;
+            if(setp == 2 && alreadyIDO > 25) {
+              alreadyIDO = alreadyIDO - 25;
             }
             console.log("alreadyIDO", alreadyIDO);
 
@@ -353,20 +353,20 @@
             if(setp == 1) {
               bili = 200000;
               $(".privateSale").html("25%");
-              $(".totalbnbraised").html("1250");
-              totalbnbraised = 1250;
+              $(".totalbnbraised").html("25");
+              totalbnbraised = 25;
               $(".saleprice").html("200,000");
-              $(".starttime").html("July 8 - July 10");
+              $(".starttime").html("December 27 - December 31");
               $(".totalbnb").html("1250");
               
             } else if(setp == 2) {
               bili = 125000;
               $(".privateSale").html("35%");
-              $(".totalbnbraised").html("2800");
+              $(".totalbnbraised").html("25");
               totalbnbraised = 2800;
               $(".saleprice").html("125,000");
-              $(".starttime").html("July 10 - July 16");
-              $(".totalbnb").html("2800");
+              $(".starttime").html("December 27 - December 31");
+              $(".totalbnb").html("25");
 
             }
             

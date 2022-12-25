@@ -1,6 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2021-04-26
-*/
 
 pragma solidity ^0.6.12;
 // SPDX-License-Identifier: Unlicensed
